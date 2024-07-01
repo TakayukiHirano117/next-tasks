@@ -1,3 +1,4 @@
+import SideMenu from "@/components/SideMenu/SideMenu";
 import React from "react";
 
 const MainLayout = ({
@@ -6,7 +7,7 @@ const MainLayout = ({
   children: React.ReactNode;
 }>) => {
   return <div className="flex h-screen">
-    <div className="bg-indigo-300">サイドメニュー</div>
+    <SideMenu />
     <main className="bg-red-300 flex-1 overflow-auto">{children}</main>
   </div>;
 };
